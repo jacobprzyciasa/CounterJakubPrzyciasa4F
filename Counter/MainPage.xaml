@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Entry x:Name="Name" Placeholder="Enter the name of your counter" />
+            <Entry x:Name="InitialValue" Placeholder="Enter the initial value" />
+            <Entry x:Name="CounterColor" Placeholder="Enter the color" />
+            
+            <Button Text="Add Counter" Clicked="AddCounter" Margin="0, 20, 0, 0" BackgroundColor="AliceBlue" />
+            <CollectionView x:Name="CounterCollectionView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="{Binding Color}" Padding="10" Margin="5">
+                            <StackLayout>
+                                <Label Text="{Binding Name}" FontSize="24" />
+                                <Label Text="{Binding Value}" FontSize="48" HorizontalOptions="Center" />
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Button Text="+" Clicked="OnIncrementClicked" CommandParameter="{Binding .}" />
+                                    <Button Text="-" Clicked="OnDecrementClicked" CommandParameter="{Binding .}" />
+                                    <Button Text="Reset" Clicked="OnResetClicked" CommandParameter="{Binding .}" />
+                                    <Button Text="Delete" Clicked="OnDeleteClicked" CommandParameter="{Binding .}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

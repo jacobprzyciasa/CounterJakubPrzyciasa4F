@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counter", "Counter\Counter.csproj", "{213E26F5-12A9-4FB4-BA7D-39919BFA7957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{213E26F5-12A9-4FB4-BA7D-39919BFA7957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{213E26F5-12A9-4FB4-BA7D-39919BFA7957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{213E26F5-12A9-4FB4-BA7D-39919BFA7957}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{213E26F5-12A9-4FB4-BA7D-39919BFA7957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{213E26F5-12A9-4FB4-BA7D-39919BFA7957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{213E26F5-12A9-4FB4-BA7D-39919BFA7957}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B449A6B-2396-4379-8690-894460B70DF5}
+	EndGlobalSection
+EndGlobal
