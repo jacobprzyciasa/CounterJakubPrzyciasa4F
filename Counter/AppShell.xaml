@@ -8,7 +8,7 @@
     Title="Counter">
 
     <ShellContent
-        Title="Home"
+        Title="Counter Jakub Przyciasa 4F"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
